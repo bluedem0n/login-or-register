@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Forms</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/modals.css">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+	<div class="container">
+		<a data-toggle="modal" href="#elegir" class="btn btn-primary">Login</a>
+		<div class="row">
+		<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER -->
+			<div id="elegir" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title text-center">FIRST, PLEASE TELL US WHO YOU ARE</h4>
+						</div>
+						<div class="modal-body seleccionar">
+							<div class="row">
+								<div class="col-md-4">
+									<a id="organization" class="btn btn-large btn-block btn-success btn-green btn-org" data-toggle="modal" href="#organizacion">Sign Up as a Organization</a>
+									<img class="organizacion" src="images/icons/casita.png" alt="">
+									<h2 class="text-center">ORGANIZATION</h2>
+								</div>
+								<div class="col-md-3">
+									<img class="linea" src="images/icons/linea.png" alt="">
+								</div>
+								<div class="col-md-4 pull-right">
+									<div class="voluntario-cont">
+										<h2>VOLUNTEER</h2>
+										<img class="voluntario" src="images/icons/cara.png" alt="">
+										<a id="volunteer" class="btn btn-large btn-green btn-block btn-success btn-vol" data-toggle="modal" href="#voluntario">Sign Up as a Volunteer</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER END-->
+			<!-- MODAL VOLUNTEER -->
+			<div id="voluntario" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header sincolor">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<center><img src="images/yanapa/logo2.png" alt=""></center>
+						</div>
+						<div class="modal-body">
+							<div class="panel panel-login">
+								<div class="panel-heading center-block">
+									<div class="row">
+										<div class="col-xs-4 login pull-left">
+											<a href="#" class="active" id="login-form-link">Login</a>
+										</div>
+										<div class="col-xs-2">
+											<div class="or">OR</div>
+										</div>
+										<div class="col-xs-4 register pull-right">
+											<a href="#" id="register-form-link">Register</a>
+										</div>
+									</div>
+								</div>
+								<div class="panel-body">
+									<!--LOGIN FORM START-->
+									<div id="login-form" style="display:block;">
+										<!--LOGIN SOCIAL BUTTONS-->
+										<div class="col-md-5 col-sm-5">
+											<div class="model-l">
+												<h4>Login to your account</h4>
+												<br>
+												<div class="row mg-btm">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-facebook">
+															<span class="fa fa-facebook"></span>Login with Facebook
+														</a>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-google">
+															<span class="fa fa-google"></span>Login with Google
+														</a>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-twitter">
+															<span class="fa fa-twitter"></span>Login with Twitter
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--LOGIN SOCIAL BUTTONS END-->
+										<!-- LINE OR -->
+										<div class="col-md-1 col-sm-1">
+											<div class="model-or">
+												<div class="o-r">
+													<span>OR</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 register-form">
+											<div class="model-r">
+												<form class="form-horizontal" method="post" action="#">
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<p>Email address</p>
+															<div class="input-group style-login">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+																<input type="text" class="form-control" name="email" id="email" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<p>Login</p>
+															<div class="input-group style-login">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+																<input type="password" class="form-control" name="password" id="password" />
+															</div>
+														</div>
+													</div>
+
+												</form>
+											</div>
+										</div>
+
+									</div>
+									<!--LOGIN FORM END-->
+									<div id="register-form" style="display: none;">
+										<!--REGISTER SOCIAL BUTTONS-->
+										<div class="col-md-5 col-sm-5">
+											<div class="model-l">
+												<h4>Sign up with</h4>
+												<br>
+												<div class="row mg-btm">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-facebook">
+															<span class="fa fa-facebook"></span>Login with Facebook
+														</a>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-google">
+															<span class="fa fa-google"></span>Login with Google
+														</a>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<a class="btn btn-block btn-social btn-twitter">
+															<span class="fa fa-twitter"></span>Login with Twitter
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- REGISTER SOCIAL BUTTONS END-->
+										<!-- LINE OR -->
+										<div class="col-md-1 col-sm-1">
+											<div class="model-or">
+												<div class="o-r">
+													<span>OR</span>
+												</div>
+											</div>
+										</div>
+										<!-- REGISTER FORM-->
+										<div class="col-md-6 col-sm-6 register-form">
+											<div class="model-r">
+												<form class="form-horizontal" method="post" action="#">
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<div class="input-group">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+																<input type="text" class="form-control" name="name" id="name" placeholder="First Name" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<div class="input-group">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+																<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<div class="input-group">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+															</span>
+																<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<div class="input-group">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+																<input type="password" class="form-control" name="password" id="password" placeholder="Password" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="cols-sm-10">
+															<div class="input-group">
+																<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+																<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm Password" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group ">
+														<div class="checkbox">
+															<div class="btn-group" data-toggle="buttons">
+																<label class="btn btn-check">
+																	<input type="checkbox" autocomplete="off">
+																	<span class="glyphicon glyphicon-ok"></span>
+																</label>
+															</div>
+															<p class="terms">
+																I agree to the <span>Terms of Service</span>
+															</p>
+														</div>
+													</div>
+													<div class="form-group ">
+														<button type="button" class="btn btn-primary btn-lg btn-block btn-signup">Sign up</button>
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- REGISTER FORM END -->
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL VOLUNTEER END-->
+			<!-- MODAL ORGANIZATION -->
+			<div id="organizacion" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header sincolor">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<center><img src="images/yanapa/logo2.png" alt=""></center>
+						</div>
+						<div class="modal-body">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL ORGANIZATION END-->
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/modals.js"></script>
+</body>
+
+</html>
