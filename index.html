@@ -1,502 +1,1027 @@
-<!DOCTYPE html>
-<html lang="">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login Forms</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title> Yanapa </title>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel='stylesheet' id='open-sans-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.1' type='text/css' media='all' />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700,800%7CPlayfair+Display:400,400italic,700,900&amp;subset=greek,latin,latin" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/theme.min.css">
+	<link rel="stylesheet" href="assets/css/yanapa.min.css">
+	<link rel="stylesheet" href="assets/css/extras.min.css">
+	<link rel="stylesheet" href="assets/css/code.css">
+	<link rel="stylesheet" href="assets/css/modals.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-social.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico"> </head>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/modals.css">
-	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-</head>
-
-<body>
-	<div class="container">
-		<a data-toggle="modal" href="#elegir" class="btn btn-primary">Login</a>
-		<div class="row">
-		<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER -->
-			<div id="elegir" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title text-center">FIRST, PLEASE TELL US WHO YOU ARE</h4>
-						</div>
-						<div class="modal-body seleccionar">
-							<div class="row">
-								<div class="col-md-4">
-									<a id="organization" class="btn btn-large btn-block btn-success btn-green btn-org" data-toggle="modal" href="#organizacion">Sign Up as a Organization</a>
-									<img class="organizacion" src="images/icons/casita.png" alt="">
-									<h2 class="text-center">ORGANIZATION</h2>
-								</div>
-								<div class="col-md-3">
-									<img class="linea" src="images/icons/linea.png" alt="">
-								</div>
-								<div class="col-md-4 pull-right">
-									<div class="voluntario-cont">
-										<h2>VOLUNTEER</h2>
-										<img class="voluntario" src="images/icons/cara.png" alt="">
-										<a id="volunteer" class="btn btn-large btn-green btn-block btn-success btn-vol" data-toggle="modal" href="#voluntario">Sign Up as a Volunteer</a>
-									</div>
-								</div>
+<body class="transparent-header pace-on pace-dot">
+	<div class="pace-overlay"></div>
+	<div class="menu navbar navbar-static-top header-logo-left-menu-right oxy-mega-menu navbar-sticky text-none" id="masthead">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-target=".main-navbar" data-toggle="collapse" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"> <img alt="Yanapa" src="assets/images/yanapa/logo2.png"> </a>
+			</div>
+			<div class="nav-container">
+				<nav class="collapse navbar-collapse main-navbar logo-navbar navbar-right">
+					<div class="menu-container">
+						<ul class="nav navbar-nav" id="menu-main">
+							<li class="menu-item  "> <a href="index.html">Home</a> </li>
+							<li class="menu-item  "> <a href="proyectos.html">Volunteer Programs</a> </li>
+							<li class="menu-item  "> <a href="faq.html">FAQ</a> </li>
+							<li>
+								<div class="espacio"></div>
+							</li>
+							<div class="buttons-nav">
+								<a data-toggle="modal" data-target="#elegir" class="btn btn-danger">Register</a>
+								<a data-toggle="modal" data-target="#btn-login" class="btn btn-success">Login</a>
 							</div>
+						</ul>
+					</div>
+					<div class="menu-sidebar">
+						<div>
+							<ul class="unstyled inline social-icons social-simple">
+								<li>
+									<div class="select-wrap">
+										<select class="espacio" name="type">
+											<option value="1">En</option>
+											<option value="1">Sp</option>
+											<option value="1">It</option>
+										</select>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
-				</div>
+				</nav>
 			</div>
-			<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER END-->
-			<!-- MODAL VOLUNTEER -->
-			<div id="voluntario" class="modal fade">
-				<div class="modal-dialog modal-megamenu">
-					<div class="modal-content">
-						<div class="modal-header sincolor">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							<center><img src="images/yanapa/logo2.png" alt=""></center>
-						</div>
-						<div class="modal-body">
-							<div class="panel panel-login">
-								<div class="panel-heading center-block">
-									<div class="row">
-										<div class="col-xs-4 login pull-left">
-											<a href="#" class="active" id="login-form-link">Login</a>
-										</div>
-										<div class="col-xs-2">
-											<div class="or">OR</div>
-										</div>
-										<div class="col-xs-4 register pull-right">
-											<a href="#" id="register-form-link">Register</a>
-										</div>
-									</div>
-								</div>
-								<div class="panel-body">
-									<!--LOGIN FORM START-->
-									<div id="login-form" style="display:block;">
-										<!--LOGIN SOCIAL BUTTONS-->
-										<div class="col-md-5 col-sm-5">
-											<div class="model-l">
-												<h4>Login to your account</h4>
-												<br>
-												<div class="row mg-btm">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-facebook">
-															<span class="fa fa-facebook"></span>Login with Facebook
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-google">
-															<span class="fa fa-google"></span>Login with Google
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-twitter">
-															<span class="fa fa-twitter"></span>Login with Twitter
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--LOGIN SOCIAL BUTTONS END-->
-										<!-- LINE OR -->
-										<div class="col-md-1 col-sm-1">
-											<div class="model-or">
-												<div class="o-r">
-													<span>OR</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-6 register-form">
-											<div class="model-r">
-												<form class="form-horizontal login-frm" method="post" action="#">
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<p>Email address</p>
-															<div class="input-group style-login">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="email" id="email" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<p>Login</p>
-															<div class="input-group style-login">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="password" id="password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group ">
-														<div class="checkbox">
-															<div class="btn-group" data-toggle="buttons">
-																<label class="btn btn-check">
-																	<input type="checkbox" autocomplete="off">
-																	<span class="glyphicon glyphicon-ok"></span>
-																</label>
-															</div>
-															<p class="terms">
-																Remember me
-															</p>
-															<p class="forgot">
-																<a href="javascript:void(0)">Forgot Password?</a>
-															</p>
-														</div>
-													</div>
-
-												</form>
-											</div>
-										</div>
-
-									</div>
-									<!--LOGIN FORM END-->
-									<div id="register-form" style="display: none;">
-										<!--REGISTER SOCIAL BUTTONS-->
-										<div class="col-md-5 col-sm-5">
-											<div class="model-l">
-												<h4>Sign up with</h4>
-												<br>
-												<div class="row mg-btm">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-facebook">
-															<span class="fa fa-facebook"></span>Login with Facebook
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-google">
-															<span class="fa fa-google"></span>Login with Google
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-twitter">
-															<span class="fa fa-twitter"></span>Login with Twitter
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- REGISTER SOCIAL BUTTONS END-->
-										<!-- LINE OR -->
-										<div class="col-md-1 col-sm-1">
-											<div class="model-or">
-												<div class="o-r">
-													<span>OR</span>
-												</div>
-											</div>
-										</div>
-										<!-- REGISTER FORM-->
-										<div class="col-md-6 col-sm-6 register-form">
-											<div class="model-r">
-												<form class="form-horizontal" method="post" action="#">
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="name" id="name" placeholder="First Name" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="password" id="password" placeholder="Password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm Password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group ">
-														<div class="checkbox">
-															<div class="btn-group" data-toggle="buttons">
-																<label class="btn btn-check">
-																	<input type="checkbox" autocomplete="off">
-																	<span class="glyphicon glyphicon-ok"></span>
-																</label>
-															</div>
-															<p class="terms">
-																I agree to the <span>Terms of Service</span>
-															</p>
-														</div>
-													</div>
-													<div class="form-group ">
-														<button type="button" class="btn btn-primary btn-lg btn-block btn-signup">Sign up</button>
-													</div>
-												</form>
-											</div>
-										</div>
-										<!-- REGISTER FORM END -->
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- MODAL VOLUNTEER END-->
-			<!-- MODAL ORGANIZATION -->
-			<div id="organizacion" class="modal fade">
-					<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header sincolor">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							<center><img src="images/yanapa/logo2.png" alt=""></center>
-						</div>
-						<div class="modal-body">
-							<div class="panel panel-login">
-								<div class="panel-heading center-block">
-									<div class="row">
-										<div class="col-xs-4 login pull-left">
-											<a href="#" class="active" id="login-form-org-link">Login</a>
-										</div>
-										<div class="col-xs-2">
-											<div class="or">OR</div>
-										</div>
-										<div class="col-xs-4 register pull-right">
-											<a href="#" id="register-form-org-link">Register</a>
-										</div>
-									</div>
-								</div>
-								<div class="panel-body">
-									<!--LOGIN FORM START-->
-									<div id="login-form-org" style="display:block;">
-										<!--LOGIN SOCIAL BUTTONS-->
-										<div class="col-md-5 col-sm-5">
-											<div class="model-l">
-												<h4>Login to your account</h4>
-												<br>
-												<div class="row mg-btm">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-facebook">
-															<span class="fa fa-facebook"></span>Login with Facebook
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-google">
-															<span class="fa fa-google"></span>Login with Google
-														</a>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<a class="btn btn-block btn-social btn-twitter">
-															<span class="fa fa-twitter"></span>Login with Twitter
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--LOGIN SOCIAL BUTTONS END-->
-										<!-- LINE OR -->
-										<div class="col-md-1 col-sm-1">
-											<div class="model-or">
-												<div class="o-r">
-													<span>OR</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-6 register-form">
-											<div class="model-r">
-												<form class="form-horizontal login-frm" method="post" action="#">
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<p>Email address</p>
-															<div class="input-group style-login">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="email" id="email" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<p>Login</p>
-															<div class="input-group style-login">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="password" id="password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group ">
-														<div class="checkbox">
-															<div class="btn-group" data-toggle="buttons">
-																<label class="btn btn-check">
-																	<input type="checkbox" autocomplete="off">
-																	<span class="glyphicon glyphicon-ok"></span>
-																</label>
-															</div>
-															<p class="terms">
-																Remember me
-															</p>
-															<p class="forgot">
-																<a href="javascript:void(0)">Forgot Password?</a>
-															</p>
-														</div>
-													</div>
-
-												</form>
-											</div>
-										</div>
-
-									</div>
-									<!--LOGIN FORM END-->
-									<div id="register-form-org" style="display: none;">
-										<!-- REGISTER FORM-->
-										<div class="col-md-3 col-sm-3 register-form">
-										</div>
-										<div class="col-md-6 col-sm-6 register-form rf2">
-											<div class="model-r">
-												<form class="form-horizontal" method="post" action="#">
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="name" id="name" placeholder="First Name" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-															</span>
-																<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="password" id="password" placeholder="Password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
-															</span>
-																<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm Password" />
-															</div>
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="cols-sm-10">
-															<div class="input-group">
-																<span class="input-group-addon">
-																		<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-																</span>
-																<button type="button" class="btn btn-default btn-gender dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="gender">No gender selected</span><span class="caret"></span></button>
-																<ul class="dropdown-menu menu">
-																	<li>1</li>
-																	<li>2</li>
-																	<li>3</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="form-group ">
-														<div class="checkbox">
-															<div class="btn-group" data-toggle="buttons">
-																<label class="btn btn-check">
-																	<input type="checkbox" autocomplete="off">
-																	<span class="glyphicon glyphicon-ok"></span>
-																</label>
-															</div>
-															<p class="terms">
-																I agree to the <span>Terms of Service</span>
-															</p>
-														</div>
-													</div>
-													<div class="form-group ">
-														<button type="button" class="btn btn-primary btn-lg btn-block btn-signup">Sign up</button>
-													</div>
-												</form>
-											</div>
-										</div>
-										<!-- REGISTER FORM END -->
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- MODAL ORGANIZATION END-->
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="js/modals.js"></script>
+	<!-- MODALS START -->
+	<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER -->
+	<div id="elegir" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center">FIRST, PLEASE TELL US WHO YOU ARE</h4>
+				</div>
+				<div class="modal-body seleccionar">
+					<div class="row">
+						<div class="col-md-4">
+							<a id="organization" class="btn btn-large btn-block btn-success btn-green btn-org" data-toggle="modal" href="#organizacion">Sign Up as a Organization</a>
+							<img class="organizacion" src="assets/images/icons/casita.png" alt="">
+							<h2 class="text-center">ORGANIZATION</h2>
+						</div>
+						<div class="col-md-3">
+							<img class="linea" src="assets/images/icons/linea.png" alt="">
+						</div>
+						<div class="col-md-4 pull-right">
+							<div class="voluntario-cont">
+								<h2>VOLUNTEER</h2>
+								<img class="voluntario" src="assets/images/icons/cara.png" alt="">
+								<a id="volunteer" class="btn btn-large btn-green btn-block btn-success btn-vol" data-toggle="modal" href="#voluntario">Sign Up as a Volunteer</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL SELECT ORGANIZATION OR VOLUNTEER END-->
+	<!-- MODAL LOGIN BUTTON -->
+	<div id="btn-login" class="modal fade" tabindex="-1">
+		<div class="modal-dialog modal-megamenu">
+			<div class="modal-content">
+				<div class="modal-header sincolor">
+					<center><img src="assets/images/yanapa/logo2.png" alt=""></center>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-login">
+						<div class="panel-heading center-block">
+							<div class="row">
+								<div class="col-xs-4 login login-btn pull-left">
+									<a href="#" class="active">Login</a>
+								</div>
+								<div class="col-xs-2">
+									<div class="loginor or">OR</div>
+								</div>
+								<div class="col-xs-4 register pull-right">
+									<a href="javascript:void(0) disabled">Register</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<!--LOGIN FORM START-->
+							<div id="login-form1" style="display:block;">
+								<!--LOGIN SOCIAL BUTTONS-->
+								<div class="col-md-5 col-sm-5">
+									<div class="model-l">
+										<h4>Login to your account</h4>
+										<br>
+										<div class="row mg-btm">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-facebook">
+													<span class="fa fa-facebook"></span>Login with Facebook
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-google">
+													<span class="fa fa-google"></span>Login with Google
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-twitter">
+													<span class="fa fa-twitter"></span>Login with Twitter
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--LOGIN SOCIAL BUTTONS END-->
+								<!-- LINE OR -->
+								<div class="col-md-1 col-sm-1">
+									<div class="model-or">
+										<div class="o-r">
+											<span>OR</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 register-form">
+									<div class="model-r">
+										<form class="form-horizontal login-frm" method="post" action="#">
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Email address</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="email" id="email" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Login</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="password" id="password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group ">
+												<div class="checkbox">
+													<div class="btn-group" data-toggle="buttons">
+														<label class="btn btn-check">
+															<input type="checkbox" autocomplete="off">
+															<span class="glyphicon glyphicon-ok"></span>
+														</label>
+													</div>
+													<p class="terms">
+														Remember me
+													</p>
+													<p class="forgot">
+														<a id="forgot-link" data-toggle="modal" data-target="#forgot">Forgot Password?</a>
+													</p>
+												</div>
+											</div>
+											<div class="form-group ">
+												<button type="button" class="btn btn-primary btn-lg btn-block button-log">Login</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--LOGIN FORM END-->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL VOLUNTEER END-->
+	<!-- MODAL VOLUNTEER -->
+	<div id="voluntario" class="modal fade" tabindex="-1">
+		<div class="modal-dialog modal-megamenu">
+			<div class="modal-content">
+				<div class="modal-header sincolor">
+					<center><img src="assets/images/yanapa/logo2.png" alt=""></center>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-login">
+						<div class="panel-heading center-block">
+							<div class="row">
+								<div class="col-xs-4 login pull-left">
+									<a href="#" id="login-form-link">Login</a>
+								</div>
+								<div class="col-xs-2">
+									<div class="or">OR</div>
+								</div>
+								<div class="col-xs-4 register pull-right">
+									<a href="#" class="active" id="register-form-link">Register</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div id="register-form" style="display: block;">
+								<!--REGISTER SOCIAL BUTTONS-->
+								<div class="col-md-5 col-sm-5">
+									<div class="model-l">
+										<h4>Sign up with</h4>
+										<br>
+										<div class="row mg-btm">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-facebook">
+													<span class="fa fa-facebook"></span>Login with Facebook
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-google">
+													<span class="fa fa-google"></span>Login with Google
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-twitter">
+													<span class="fa fa-twitter"></span>Login with Twitter
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- REGISTER SOCIAL BUTTONS END-->
+								<!-- LINE OR -->
+								<div class="col-md-1 col-sm-1">
+									<div class="model-or">
+										<div class="o-r">
+											<span>OR</span>
+										</div>
+									</div>
+								</div>
+								<!-- REGISTER FORM-->
+								<div class="col-md-6 col-sm-6 register-form">
+									<div class="model-r">
+										<form class="form-horizontal" method="post" action="#">
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="name" id="name" placeholder="First Name" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="password" id="password" placeholder="Password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm Password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group ">
+												<div class="checkbox">
+													<div class="btn-group" data-toggle="buttons">
+														<label class="btn btn-check">
+															<input type="checkbox" autocomplete="off">
+															<span class="glyphicon glyphicon-ok"></span>
+														</label>
+													</div>
+													<p class="terms">
+														I agree to the <span>Terms of Service</span>
+													</p>
+												</div>
+											</div>
+											<div class="form-group ">
+												<button type="button" class="btn btn-primary btn-lg btn-block btn-signup">Sign up</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<!-- REGISTER FORM END -->
+							</div>
+							<!--LOGIN FORM START-->
+							<div id="login-form" style="display:none;">
+								<!--LOGIN SOCIAL BUTTONS-->
+								<div class="col-md-5 col-sm-5">
+									<div class="model-l">
+										<h4>Login to your account</h4>
+										<br>
+										<div class="row mg-btm">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-facebook">
+													<span class="fa fa-facebook"></span>Login with Facebook
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-google">
+													<span class="fa fa-google"></span>Login with Google
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-twitter">
+													<span class="fa fa-twitter"></span>Login with Twitter
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--LOGIN SOCIAL BUTTONS END-->
+								<!-- LINE OR -->
+								<div class="col-md-1 col-sm-1">
+									<div class="model-or">
+										<div class="o-r">
+											<span>OR</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 register-form">
+									<div class="model-r">
+										<form class="form-horizontal login-frm" method="post" action="#">
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Email address</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="email" id="email" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Login</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="password" id="password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group ">
+												<div class="checkbox">
+													<div class="btn-group" data-toggle="buttons">
+														<label class="btn btn-check">
+															<input type="checkbox" autocomplete="off">
+															<span class="glyphicon glyphicon-ok"></span>
+														</label>
+													</div>
+													<p class="terms">
+														Remember me
+													</p>
+													<p class="forgot">
+														<a id="forgot-link" data-toggle="modal" data-target="#forgot">Forgot Password?</a>
+													</p>
+												</div>
+											</div>
+											<div class="form-group ">
+												<button type="button" class="btn btn-primary btn-lg btn-block button-log">Login</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--LOGIN FORM END-->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL VOLUNTEER END-->
+	<!-- MODAL ORGANIZATION -->
+	<div id="organizacion" class="modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header sincolor">
+					<center><img src="assets/images/yanapa/logo2.png" alt=""></center>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-login">
+						<div class="panel-heading center-block">
+							<div class="row">
+								<div class="col-xs-4 login pull-left">
+									<a href="#" id="login-form-org-link">Login</a>
+								</div>
+								<div class="col-xs-2">
+									<div class="or">OR</div>
+								</div>
+								<div class="col-xs-4 register pull-right">
+									<a href="#" class="active" id="register-form-org-link">Register</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<!--LOGIN FORM START-->
+							<div id="login-form-org" style="display:none;">
+								<!--LOGIN SOCIAL BUTTONS-->
+								<div class="col-md-5 col-sm-5">
+									<div class="model-l">
+										<h4>Login to your account</h4>
+										<br>
+										<div class="row mg-btm">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-facebook">
+													<span class="fa fa-facebook"></span>Login with Facebook
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-google">
+													<span class="fa fa-google"></span>Login with Google
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<a class="btn btn-block btn-social btn-twitter">
+													<span class="fa fa-twitter"></span>Login with Twitter
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--LOGIN SOCIAL BUTTONS END-->
+								<!-- LINE OR -->
+								<div class="col-md-1 col-sm-1">
+									<div class="model-or">
+										<div class="o-r">
+											<span>OR</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 register-form">
+									<div class="model-r">
+										<form class="form-horizontal login-frm" method="post" action="#">
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Email address</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="email" id="email" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<p>Login</p>
+													<div class="input-group style-login">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="password" id="password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group ">
+												<div class="checkbox">
+													<div class="btn-group" data-toggle="buttons">
+														<label class="btn btn-check">
+															<input type="checkbox" autocomplete="off">
+															<span class="glyphicon glyphicon-ok"></span>
+														</label>
+													</div>
+													<p class="terms">
+														Remember me
+													</p>
+													<p class="forgot">
+														<a id="forgot-link" data-toggle="modal" data-target="#forgot">Forgot Password?</a>
+													</p>
+												</div>
+											</div>
+											<div class="form-group ">
+												<button type="button" class="btn btn-primary btn-lg btn-block button-log">Login</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--LOGIN FORM END-->
+							<div id="register-form-org" style="display: block;">
+								<!-- REGISTER FORM-->
+								<div class="col-md-3 col-sm-3 register-form">
+								</div>
+								<div class="col-md-6 col-sm-6 register-form rf2">
+									<div class="model-r">
+										<form class="form-horizontal" method="post" action="#">
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="name" id="name" placeholder="First Name" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+															</span>
+														<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="password" id="password" placeholder="Password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+															</span>
+														<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm Password" />
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon">
+																		<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+																</span>
+														<button type="button" class="btn btn-default btn-gender dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="gender">No gender selected</span><span class="caret"></span></button>
+														<ul class="dropdown-menu menu">
+															<li>1</li>
+															<li>2</li>
+															<li>3</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="form-group ">
+												<div class="checkbox">
+													<div class="btn-group" data-toggle="buttons">
+														<label class="btn btn-check">
+															<input type="checkbox" autocomplete="off">
+															<span class="glyphicon glyphicon-ok"></span>
+														</label>
+													</div>
+													<p class="terms">
+														I agree to the <span>Terms of Service</span>
+													</p>
+												</div>
+											</div>
+											<div class="form-group ">
+												<button type="button" class="btn btn-primary btn-lg btn-block btn-signup">Sign up</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<!-- REGISTER FORM END -->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL ORGANIZATION END-->
+	<!-- FORGOT PASSWORD VOLUNTEER START-->
+	<div id="forgot" class="modal fade" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-forgot">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<h2 class="tittle-reset text-center">ACOOUNT RESET</h2>
+					<p class="forgot-intro">Forgot your password?</p>
+					<p>To reset your account password, enter the email</p>
+					<p>address and we will send your instruction</p>
+					<div class="panel-body">
+					<form class="form-horizontal login-frm" method="post" action="#">
+						<div class="form-group forgot-form">
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon forgot-input">
+										<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+									</span>
+									<input type="text" class="form-control" name="email" id="email" placeholder="E-mail Address" />
+								</div>
+							</div>
+						</div>
+						<a href="" class="btn btn-danger btn-send">SEND</a>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- FORGOT PASSWORD VOLUNTEER END-->
+	<!-- MODALS END -->
+	<div id="content" role="main">
+		<article>
+			<section class="section">
+				<div class="background-media" data-0-top-bottom="background-position: 50% -85px" data-start="background-position: 50% 0px" style="background-image: url(assets/images/yanapa/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;">
+				</div>
+				<div class="background-overlay grid-overlay-0" style="background-color: rgba(0,0,0,0.2);"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="divider-wrapper">
+								<div class="visible-xs element-height-50"></div>
+								<div class="visible-sm element-height-100"></div>
+								<div class="visible-md element-height-200"></div>
+								<div class="visible-lg element-height-200"></div>
+							</div>
+							<h1 class="text-center text-light os-animation bigger" data-os-animation="fadeIn" data-os-animation-delay="0.1s">
+                        Apply for an International Volunteer Project
+                    </h1>
+							<h1 class="text-center element-top-20 element-bottom-20 text-light os-animation bigger regular" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+                        <em>We have the best destinations</em>
+                    </h1>
+							<div class="figure os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s"> <span class="figure-image">
+                            <img alt="decor-big-white.png" src="assets/images/yanapa/decor-big-white.png">
+                        </span> </div>
+							<div class="divider-wrapper">
+								<div class="visible-xs element-height-50"></div>
+								<div class="visible-sm element-height-100"></div>
+								<div class="visible-md element-height-100"></div>
+								<div class="visible-lg element-height-100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="background-media" style="background-image: url(assets/images/Yanapa/rooms2-notinclude.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed; background-position: 50% 0%;"> </div>
+				<div class="background-overlay grid-overlay-0" style="background-color: rgba(79,184,50,1);"></div>
+				<div class="container container-vertical-middle">
+					<div class="row vertical-middle">
+						<div class="col-md-12 text-center">
+							<div class="divider-wrapper">
+								<div class="visible-xs element-height-40"></div>
+								<div class="visible-sm element-height-40"></div>
+								<div class="visible-md element-height-40"></div>
+								<div class="visible-lg element-height-40"></div>
+							</div>
+							<form action="http://lambdahtml.oxygenna.com/contact_mailer_hotel.php" class="contact-form">
+								<div class="row vertical-middle">
+									<div class="col-md-1 text-light">
+										<!--<div class="form-group  text-left">
+                                            <label>Fecha:</label>
+                                            <div class="date-wrapper">
+                                                <input type="text" name="datepickerin" size="40" class="form-control datepicker" placeholder="Escoge la fecha" required> </div>
+                                        </div>-->
+									</div>
+									<div class="col-md-3 text-light">
+										<div class="form-group text-left">
+											<label>Category:</label>
+											<br>
+											<select name="type">
+												<option value="Single Room"> Education </option>
+												<option value="Double Room"> Health </option>
+												<option value="Triple Room"> Animals </option>
+												<option value="Suite"> Business </option>
+												<option value="Suite"> Environment </option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-3 text-light">
+										<div class="form-group text-left">
+											<label>City:</label>
+											<br>
+											<select name="type">
+												<option value="Single Room"> Lima </option>
+												<option value="Double Room"> Cuzco </option>
+												<option value="Triple Room"> Arequipa </option>
+												<option value="Suite"> Huaraz </option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group text-center">
+											<label>&nbsp;</label>
+											<br>
+											<input class="btn btn-primary" type="submit" value="Search..."> </div>
+									</div>
+								</div>
+								<div class="messages"></div>
+							</form>
+							<div class="divider-wrapper">
+								<div class="visible-xs element-height-40"></div>
+								<div class="visible-sm element-height-40"></div>
+								<div class="visible-md element-height-40"></div>
+								<div class="visible-lg element-height-40"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="background-overlay grid-overlay-0" style="background-color: rgba(86,154,167,0);"></div>
+				<div class="container-fullwidth container-vertical-middle">
+					<div class="row vertical-middle">
+						<div class="col-md-12" style="background:rgba(255, 255, 255, 0.95);">
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+									<h2 class="text-center element-top-50 os-animation big" data-os-animation="fadeIn" data-os-animation-delay="0.1s">¿Que es Yanapa?</h2>
+									<p class="text-center element-top-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<!--<ul class="pricing-item-list element-top-20 element-bottom-100" data-os-animation="none" data-os-animation-delay="0s">
+                                        <li class="pricing-cirle element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                            <div class="pricing-item-list-content">
+                                                <h3>Superior Room
+                                        <span>$99/night</span></h3>
+                                                <p>The Superior Room, with king-size bed or twin single and one sofa bed, spans 25 sqm with a balcony or terrace overlooking the sea.</p>
+                                            </div>
+                                        </li>
+                                        <li class="pricing-cirle element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                            <div class="pricing-item-list-content">
+                                                <h3>Deluxe Room
+                                        <span>$105/night</span></h3>
+                                                <p>The Deluxe Room, with king-size bed or twin single and one sofa bed, spans 25 sqm with a balcony or terrace overlooking the sea.</p>
+                                            </div>
+                                        </li>
+                                        <li class="pricing-cirle element-top-0 element-bottom-40 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                                            <div class="pricing-item-list-content">
+                                                <h3>Bungalow Studio
+                                        <span>$150/weekend</span></h3>
+                                                <p>The Bungalow Studio, with king-size bed or twin single and one sofa bed, spans 25 sqm with a balcony or terrace overlooking the sea.</p>
+                                            </div>
+                                        </li>
+                                    </ul>-->
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+									<h2 class="text-center element-top-30 os-animation big" data-os-animation="fadeIn" data-os-animation-delay="0.1s">¿Como aplicar a un voluntariado?</h2>
+									<!--Código de Prueba-->
+									<ul class="timeline">
+										<!--shake effect-->
+										<li>
+											<div class="timeline-badge info"><span class="glyphicon glyphicon-tower"></span>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<h2 class="timeline-title">1 - Primer Paso</h2>
+												</div>
+												<div class="timeline-body">
+													<img src="assets/images/img/alex.png">
+
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												</div>
+											</div>
+										</li>
+										<!--pagination-->
+										<li class="timeline-inverted">
+											<div class="timeline-badge info"><i class="glyphicon glyphicon-fast-forward"></i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<h2 class="timeline-title">2 - Segundo Paso</h2>
+												</div>
+												<div class="timeline-body">
+
+													<div id="pages" class="">
+														<div class="page">
+															<img src="assets/images/img/alex.png"> Page 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+														<div class="page">
+
+															Page 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+														<div class="page">
+															<img src="assets/images/img/alex.png"> Page 3 - More m ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+														<div class="page">Page 4 - Final ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+													</div>
+													<ul class="pagination" id="myPager"></ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<!--Código de Prueba-->
+
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</article>
+		<footer id="footer">
+			<section class="section">
+				<div class="container">
+					<div class="row element-top-60 element-bottom-60">
+						<div class="col-sm-4">
+							<div class="sidebar-widget">
+								<h3 class="sidebar-header">
+                            Yanapa
+                        </h3>
+								<div>
+
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="sidebar-widget " id="text-2">
+								<h3 class="sidebar-header">
+                            Contact us
+                        </h3>
+								<div>
+									tel:+51 976048631 - fax: +51 2123 456
+									<br> Skype: arodriguez2407 24hrs </div>
+							</div>
+							<div class="sidebar-widget">
+								<ul class="unstyled inline social-icons social-simple">
+									<li>
+										<a class="fa fa-facebook" data-iconcolor="#3b5998" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-dribbble" data-iconcolor="#ea4c89" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-twitter" data-iconcolor="#00acee" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-google-plus" data-iconcolor="#E45135" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-youtube" data-iconcolor="#c4302b" href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="sidebar-widget ">
+								<h3 class="sidebar-header">
+                            Localization
+                        </h3>
+								<div>
+									<address>
+                                Lima - Perú<br>
+                                Miraflores
+                            </address>
+								</div>
+							</div>
+							<div class="sidebar-widget">
+								<ul class="unstyled inline social-icons social-simple">
+									<li>
+										<a class="fa fa-cc-amex" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-paypal" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-bank" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-cc-mastercard" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-google-wallet" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+									<li>
+										<a class="fa fa-credit-card" data-iconcolor="#3b9999" href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section subfooter">
+				<div class="container">
+					<div class="row element-top-10 element-bottom-10 footer-columns-2">
+						<div class="col-sm-6">
+							<div class="sidebar-widget">
+								<div> © 2015 Yanapa. All Rights Reserved </div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="sidebar-widget widget_nav_menu">
+								<div class="menu-footer-container">
+									<ul class="menu" id="menu-footer">
+										<li class="menu-item"> <a href="proyectos.html">
+                                        Proyects
+                                    </a> </li>
+										<li class="menu-item"> <a href="register.html">
+                                        FAQ
+                                    </a> </li>
+										<li class="menu-item"> <a href="register.html">
+                                        Contact us
+                                    </a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</div>
+	<a class="go-top go-top-square" href="javascript:void(0)"> <i class="fa fa-angle-up"></i> </a>
+	<script type="text/javascript">
+		var oxyThemeData = {
+			navbarHeight: 90,
+			navbarScrolled: 80,
+			navbarScrolledPoint: 100,
+			menuClose: 'off',
+			scrollFinishedMessage: 'No more items to load.',
+			hoverMenu: {
+				hoverActive: false,
+				hoverDelay: 200,
+				hoverFadeDelay: 200
+			},
+			siteLoader: 'on'
+		};
+	</script>
+	<script src="assets/js/theme.min.js"></script>
+	<!-- load contact form js -->
+	<script src="assets/js/contact.min.js"></script>
+	<script src="assets/js/code.js"></script>
+	<script src="assets/js/modals.js"></script>
 </body>
 
 </html>
